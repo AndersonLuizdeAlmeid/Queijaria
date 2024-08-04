@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": ""
+        },
+        "background": {
+          "beginsPattern": "started server",
+          "endsPattern": "Debugger listening on"
+        }
+      },
+      "label": "dev",
+      "type": "shell",
+      "command": "npm run start", // ou o comando que você usa para iniciar seu servidor de desenvolvimento
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
